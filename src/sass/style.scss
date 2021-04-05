@@ -1,5 +1,14 @@
-@import "../sass/base/variables";
+@import '../sass/base/variables';
 
-h1 {
-    color: red;
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
 }
+
+.container {
+    max-width: 950px; /* т.к. весь контент на сайте ограничен 10 полосами бутстрап создаем контейнер для всего контента размером 950пик */
+    margin: 0 auto; /* выставляем контейнер по центру */
+}
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantage';

@@ -1,0 +1,39 @@
+.header {
+    display: flex; /* для выравнивания блоков */
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        width: 250px;
+        img {
+            width: 100%; /* устанавливаем фиксированную ширину блока и картинку обязываем быть размером 100% от ширины на случай смены логотипа */
+        }
+    }
+    &__official {
+        font-weight: 500;
+        font-size: 12px;
+        color: #FFFFFF;
+        text-align: center;
+        span {
+            display: block; /* переводим в блочный элемент чтобы он занял все свободное место и стал ниже основного текста */
+            font-size: 18px;
+        }
+    }
+    &__phone {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover {
+            color: #FFFFFF;
+            
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+}
