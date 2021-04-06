@@ -1,4 +1,9 @@
 @import '../sass/base/variables';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantage';
+@import 'blocks/media';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
@@ -8,7 +13,4 @@
     max-width: 950px; /* т.к. весь контент на сайте ограничен 10 полосами бутстрап создаем контейнер для всего контента размером 950пик */
     margin: 0 auto; /* выставляем контейнер по центру */
 }
-@import 'blocks/promo';
-@import 'blocks/header';
-@import 'blocks/buttons';
-@import 'blocks/advantage';
+
