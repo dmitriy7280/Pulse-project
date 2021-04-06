@@ -3,6 +3,7 @@
 @media ( max-width: 767px ) {
     .container {
         width: 540px;
+        padding-bottom: 40px;
     }
     .header {
         &__phone {
@@ -38,10 +39,35 @@
             }  
         }
     }
+    .consultation {
+        padding-bottom: 40px;
+        &__descr {
+            text-align: center;
+        }
+    }
+    .feed-form {
+        margin: 0 auto;
+        margin-top: 50px;
+
+    }
+    
+    .title {
+        &_left {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
 }
 @media ( max-width: 575px ) {
     .container {
         width: 320px;
+    }
+    .title {
+        font-size: 25px;
+        &_left {
+            font-size: 20px;
+            text-align: center;
+        }
     }
     .header {
         flex-direction: column;
@@ -66,15 +92,19 @@
         } 
     }
     .advantage {
-        &__title {
-            font-size: 25px;
-        }
         &__wrapper {
             width: 100%;
         }
     }
     .button {
         margin-top: 10px;
+    }
+    .consultation {
+        &__descr {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 40px;
+        }
     }
 }
 
