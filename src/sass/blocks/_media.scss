@@ -57,6 +57,20 @@
             text-align: center;
         }
     }
+    .carousel {
+        display: none;
+    }
+    .catalog-item {
+        margin: 0 auto;
+    }
+    .catalog {
+        padding-bottom: 20px;
+        &__tab {
+            font-size: 15px;
+        }
+
+    }
+   
 }
 @media ( max-width: 575px ) {
     .container {
@@ -104,6 +118,30 @@
             text-align: center;
             font-size: 15px;
             margin-top: 40px;
+        }
+    }
+    .carousel {
+        display: none;
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        &__tab {
+            margin-top: 20px;
+
+        }
+    }
+    .feed {
+        &__item {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        &__img {
+            margin: 0 auto;
+            margin-bottom: 10px;
         }
     }
 }

@@ -1,0 +1,27 @@
+.feed {
+    &__item {
+        display: flex;
+        margin-top: 60px;
+        &_name {
+            font-weight: bold;
+            font-size: 18px;
+            color: #0D0D0D;
+        }
+        &_attainment {
+            font-weight: 500;
+            font-size: 14px;
+            color: #646464;
+        }
+        &_text {
+            font-weight: 300;
+            font-size: 16px;
+            color: #0D0D0D;
+            margin-top: 10px;
+        } 
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+        margin-right: 60px;
+    }
+}
