@@ -1,0 +1,28 @@
+@keyframes heartbeat {
+    from {
+        transform: scale(1); /* масштаб 100% */
+    }
+    50% {
+        transform: scale(1.5); /* в середине анимации размер картинки составит 150% */
+    }
+    to {
+        transform: scale(1); /* в конце вернется к 100% */
+    }
+}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animate__fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }

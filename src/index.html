@@ -1,5 +1,5 @@
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="ru">
         <head>
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,6 @@
             <title>Pulse</title>
         <!--     <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500;700&display=swap" rel="stylesheet"> -->
-            <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-            <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-            <link rel="stylesheet" href="css/font.css">
-            <link rel="stylesheet" type="text/css" href="css/slick.css"/>
             <link rel="stylesheet" href="css/style.min.css">
         </head>
         <body>
@@ -60,7 +56,7 @@
             </section>
             <section class="advantage">
                 <div class="container">
-                    <div class="title">НАШИ ПРЕИМУЩЕСТВА</div>
+                    <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
                     <div class="advantage__wrapper">
                     <div class="advantage__item">
                             <img src="icon/cup.png" alt="cup">
@@ -70,7 +66,7 @@
                                 готовятся к соревнованиям по триатлону!</div>
                         </div>
                         <div class="advantage__item">
-                            <img src="icon/heart.png" alt="heart">
+                            <img src="icon/heart.png" alt="heart" class="advantage__icon advantage__icon_animated">
                             <div class="advantage__subtitle">Заботимся о здоровье</div>
                             <div class="advantage__subscr">Мы работаем для того, 
                                 чтобы Ваши занятия спортом шли на пользу Вашему здоровью
@@ -104,7 +100,7 @@
                         </form>
                     </div>
                 </section>
-                <section class="carousel">
+                <div class="carousel">
                     <div class="container">
                         <div class="carousel__inner">
                             <div>
@@ -118,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
     <section class="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
@@ -427,11 +423,10 @@
             </div>
         </div>
     </section>
-        </section>
         <section class="feed">
             <div class="container">
                 <h2 class="title">отзывы клиентов</h2>
-                    <div class="feed__item">
+                    <div class="feed__item animate__animated animate__fadeInUp wow">
                         <img src="img/photo_1Irina.png" alt="Irina" class="feed__img">
                         <div class="feed__text">
                             <div class="feed__item_name">Ирина Иванченко </div>
@@ -441,7 +436,7 @@
                         </div>
                         
                     </div>
-                    <div class="feed__item">
+                    <div class="feed__item  animate__animated animate__fadeInUp wow">
                         <img src="img/photo_2ivan.png" alt="Ivan" class="feed__img">
                         <div class="feed__text">
                             <div class="feed__item_name">Иван Сёмочкин</div>
@@ -450,7 +445,7 @@
                         </div>
 
                     </div>
-                    <div class="feed__item">
+                    <div class="feed__item  animate__animated animate__fadeInUp wow">
                         <img src="img/photo_3Yulia.png" alt="Yulia" class="feed__img">
                         <div class="feed__text">
                             <div class="feed__item_name">Юлия Дашкина</div>
@@ -462,7 +457,7 @@
         </section>
         <footer class="footer">
             <!-- <div class="footer__map"></div> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4304811959933!2d37.644807315829034!3d55.76839498055751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1617971260525!5m2!1sru!2sua" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4304811959933!2d37.644807315829034!3d55.76839498055751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1617971260525!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <div class="footer__info">
                 <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
                 <a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
@@ -514,11 +509,12 @@
             <img src="icon/up.svg" alt="up">
         </a>
         
-            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-            <script type="text/javascript" src="js/slick.min.js"></script>
+            <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script src="js/slick.min.js"></script>
             <script src="js/jquery.validate.min.js"></script>
             <script src="js/jquery.maskedinput.min.js"></script>
+            <script src="js/wow.min.js"></script>
             <script src="js/script.js"></script>
         </body>
     </html>

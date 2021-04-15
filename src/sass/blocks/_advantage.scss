@@ -25,4 +25,16 @@
         font-size: 14px;
         color: #0D0D0D;
     }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+/*          animation-name: heartbeat /* название - отсылка к названию в @keyfrasmes
+            animation-duration: 1.5s; /* длительность анимации
+            animation-timing-function: ease; специфическое св-во смотреть в документации
+            animation-iteration-count: infinite ; анимация происходит постоянно */
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
 }
